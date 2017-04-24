@@ -22,6 +22,7 @@ Line feed characters are ignored, and used for organization purposes only.
 
 ### Consonants (functions)
 
+|Command|Description|Command|Description|
 |---|---|---|---|
 |b|Pop two elements, push bitwise xor|B|Pops a string, reads a file with that name, then pushes its contents. Reversed: Pops a string, creates a file with that name, pops another string, and writes it to that file.|
 |c|Pop a character and push its char code, or pop a string and push the integer it results in when converted to base 256 using ASCII|C|Pop an integer, then pop that many items and concatenate them into a string, or pop a string, and push its individual chars.|
