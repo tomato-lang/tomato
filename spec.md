@@ -55,7 +55,8 @@ Line feed characters are ignored, and used for organization purposes only.
 `o`|No modifier|`O`|If a falsey value would be pushed, push nothing instead
 `u`|Operate on the bottom of the stack instead|`U`|Negate the operation (only valid in some cases)
 
-Other
+### Other
+
 |Command|Description|Command|Description|
 |---|---|---|---|
 |y|Read one line of input from stdin to top of stack, or push 0 on EOF|Y|Pop top of stack and print to stdout. No newline added.|
