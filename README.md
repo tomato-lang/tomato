@@ -15,8 +15,7 @@
 
 A stack-based esoteric programming language based on interleaving consonants and vowels.
 
-
-[Spec](https://docs.google.com/document/d/14XCGxxTl6gx-KgIfKN5i6Ix4whVovMwSvNLOdOOnblI/edit)
+For the spec, look at `spec.md` or [the Google Doc](https://docs.google.com/document/d/14XCGxxTl6gx-KgIfKN5i6Ix4whVovMwSvNLOdOOnblI/edit).
 
 ## Concept
 Tomato is a stack-based language where consonants and vowels alternate. Consonants are the main function while vowels modify functions or add to their functionality. 
@@ -28,4 +27,3 @@ Commands are represented by one of three things: a consonant and one or more vow
 Commands are executed from left to right. Bare literals, when encountered, are pushed to the stack. At the end of the program, the topmost value in the stack is implicitly printed.
 
 Most commands are reversible. The “U” modifier reverses their function. This makes the amount of possible commands larger. It also allows for powerful modifications, like taking logarithms with “QU”. 
-
