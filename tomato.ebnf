@@ -1,0 +1,37 @@
+whitespace = ? white space characters ? ;
+all characters = ? all visible characters ? ;
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+
+unescaped string characters = all characters - '"' ;
+
+unescaped literal characters = all characters - "'" ;
+
+escape character = "\\" ;
+
+string escape = escape character, '"' ;
+
+character literal escape = escape character, "'" ;
+
+string characters = unescaped string characters | string escape ;
+
+character literal characters = unescaped literal characters | character literal escape ;
+
+function = "B" | "C" | "D" | "F" | "G" | "H" | "J" | "K" | "L" | "M" | "N" | "P" | "Q" | "R" | "S" | "T"
+       | "V" | "W" | "X" | "Z" | "b" | "c" | "d" | "f" | "g" | "h" | "j" | "k" | "l" | "m" | "n" | "p"
+       | "q" | "r" | "s" | "t" | "v" | "w" | "x" | "z" ;
+modifier = "A" | "E" | "I" | "O" | "U" | "a" | "e" | "i" | "o" | "u" ;
+
+
+command = function, modifier ;
+
+boolean literal = "," | "." ;
+
+number literal = ( digit, number literal ) | digit ;
+
+string literal = '"' , { string characters }, '"' ;
+
+character literal = "'", character literal characters ;
+
+syntax unit = { whitespace }, ( command | boolean literal | number literal | string literal | character literal ), { whitespace } ;
+
+program = { syntax unit }
