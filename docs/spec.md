@@ -51,7 +51,7 @@ Line feed characters are ignored, and used for organization purposes only.
 |-------|-----------|-------|-----------|
 `a`|Function peeks instead of popping|`A`|Debug, print the actions taken to stderr
 `e`|Pop an int before operating and perform the function that many times, or once if it’s not a number.|`E`|If the top of the stack is a boolean, pop it, only execute the command if it is equal to true. Else, treat as o.
-`i`|Print the value instead of pushing it.|Equivalent to oY|`I`|Take Input instead of popping. Operations that pop n times take input n times.
+`i`|Print the value instead of pushing it. Equivalent to oY|`I`|Take **I**nput instead of popping. Operations that pop n times take input n times.
 `o`|No modifier|`O`|If a falsey value would be pushed, push nothing instead
 `u`|Operate on the bottom of the stack instead|`U`|Negate the operation (only valid in some cases)
 
