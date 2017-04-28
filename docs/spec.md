@@ -109,7 +109,7 @@ A comment starting at the beginning of a line may be started with #. This is mos
 
 ### ASCII art tomato
 
-                	/``\_
+                 /``\_
              _.-`| \ ``._
          .-''`-.       _.'`.
        .'      / /'\/`.\    `.
